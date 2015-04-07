@@ -21,7 +21,6 @@ var {
 
 var ReactNativeSample = React.createClass({
   render: function() {
-    // FIXME: tintColor does not work
     return (
       <NavigatorIOS
          style={styles.navigator}
@@ -128,7 +127,7 @@ var NewsListItem = React.createClass({
   render: function() {
     var item = this.props.item;
     if(!item.image_400_url){
-      return null;
+      return <View/>;
     }
     return (
       <View>
